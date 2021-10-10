@@ -1,0 +1,12 @@
+program 1:
+import textwrap
+
+def wrap(stg, max_w):
+  return textwrap.fill(stg, max_w)
+
+stg, max_w = input(), int(input())
+result = wrap(stg, max_w)
+if(max_w>=20):
+  print(result)
+else:
+  print(result,end="")
