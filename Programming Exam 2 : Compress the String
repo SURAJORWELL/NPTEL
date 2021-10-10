@@ -1,0 +1,20 @@
+def printRLE(s) :
+    i = 0
+    while( i < len(s) - 1) :
+        count = 1
+        while s[i] == s[i + 1] :
+ 
+            i += 1
+            count += 1
+             
+            if i + 1 == len(s):
+                break
+         
+        print("("+str(count)+","+str(s[i])+")",end = "")
+        i += 1
+    print("("+str(count)+","+str(s[i])+")",end="")
+
+
+
+s=input()
+printRLE(s)
