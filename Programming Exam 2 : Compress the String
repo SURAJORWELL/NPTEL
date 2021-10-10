@@ -1,6 +1,6 @@
 #Method 1
 
-def printRLE(s) :
+def printRec(s) :
     i = 0
     while( i < len(s) - 1) :
         count = 1
@@ -16,10 +16,8 @@ def printRLE(s) :
         i += 1
     print("("+str(count)+","+str(s[i])+")",end="")
 
-
-
 s=input()
-printRLE(s)
+printRec(s)
 
 
 Method 2:
